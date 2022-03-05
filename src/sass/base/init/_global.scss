@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: $old-sport-regular;
+  font-size: $font-regular;
+  line-height: $line-height-primary;
+  font-weight: 400;
+  background-color: $white;
+  color: $black;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.page-wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  text-transform: uppercase;
+}
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: rem(48px);
+}
+
+h2 {
+  font-size: rem(38px);
+}

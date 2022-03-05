@@ -1,0 +1,29 @@
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/images/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-block {
+  padding: 1.25rem;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--logo {
+      flex: 1 0 33%;
+
+      img {
+        max-width: rem(130px);
+      }
+
+      h1 {
+        flex: 1 0 75%;
+      }
+    }
+  }
+}

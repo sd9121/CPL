@@ -1,0 +1,29 @@
+//Fonts
+
+@font-face {
+  font-family: 'OldSport-Regular';
+  src: url('../../src/fonts/old_sport_02_athletic_ncv-webfont.woff2') format('woff2'),
+       url('../../src/fonts/old_sport_02_athletic_ncv-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DigitalDismay-Regular';
+  src: url('../../src/fonts/Pdigital_dismay-webfont.woff2') format('woff2'),
+       url('../../src/fonts/digital_dismay-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontSemibold';
+  src: url('../../src/fonts/mont-semibold-webfont.woff') format('woff2'),
+  url('../../src/fonts/mont-semibold-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$old-sport-regular: "OldSport-Regular";
+$digital-dismay-regular: "DigitalDismay-Regular";
+$mont-semibold: "MontSemibold";

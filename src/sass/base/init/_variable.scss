@@ -1,0 +1,26 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Small device and large tablets
+$screen-mobile-tablet: 1024px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Variable for fonts.
+$font-regular: 16px;
+$line-height-primary: 1.5;
+
+// breakpoints
+$media-type: screen;
+$mobile: (min-width $screen-sm-min);
+$tablet: (min-width $screen-md-min);
+$mobile-tablet: (min-width $screen-mobile-tablet);
+$desktop: (min-width $screen-lg-min);
+$xl-desktop: (min-width $screen-xl-min);

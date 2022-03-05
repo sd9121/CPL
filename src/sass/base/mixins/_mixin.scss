@@ -1,0 +1,14 @@
+@mixin button($bg-color, $text-color) {
+  font-size: rem(20px);
+  line-height: rem(20px);
+  text-align: center;
+  color: $text-color;
+  background-color: $bg-color;
+  border-radius: 0;
+  font-family: $prequel-demo-regular;
+  padding: rem(22px 20px);
+  &:hover,
+  &:focus {
+    background-color: $bg-color;
+  }
+}
