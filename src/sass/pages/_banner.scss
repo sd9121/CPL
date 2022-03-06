@@ -8,21 +8,136 @@
 }
 
 .banner-block {
-  padding: 1.25rem;
+  padding: 10px 30px 20px 5px;
+
+  &--main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__top {
     display: flex;
     flex-wrap: wrap;
 
     &--logo {
-      flex: 1 0 33%;
+      margin-top: rem(10px);
 
       img {
-        max-width: rem(130px);
+        max-width: rem(150px);
+      }
+    }
+    h1 {
+      color: $yellow;
+      font-family: sans-serif;
+      text-align: center;
+      margin-left: rem(200px);
+    }
+  }
+
+  &__sidebar {
+
+    &--left {
+
+      .best-score {
+        background: linear-gradient(to right, #fd7503, #ff2f04);
+        color: $white;
+        display: inline-block;
+        border-radius: 50%;
+        line-height: 1.2;
+        min-width: rem(90px);
+        max-height: rem(45px);
+        text-align: center;
+        margin-top: rem(5px);
+        span {
+          font-family: sans-serif;
+          font-size: rem(54px);
+          font-weight: bold;
+          position: relative;
+          top: -10px;
+        }
+      }
+
+      .hero-card {
+        display: flex;
+        align-items: center;
+        color: $white;
+        font-size: rem(36px);
+        letter-spacing: 2px;
+
+        &__user-name,
+        &__user-group {
+          border: 2px solid #fd7503;
+          border-radius: 0 0 50px 0;
+          padding-left: 20px;
+          margin-left: -12px;
+
+          p {
+            padding-bottom: 10px;
+          }
+        }
+
+        &__user-name {
+          margin-bottom: 18px;
+          padding-right: rem(120px);
+        }
+
+        &__user-group {
+          padding-right: rem(110px);
+          margin-right: 38px;
+        }
+
+        &__image {
+          z-index: 9;
+          height: rem(380px);
+          width: rem(380px);
+          border: rem(16px) solid transparent;
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          background-size: cover;
+          box-sizing: border-box;
+          border-radius: 50%;
+          background-image: url("../img/images/user-profile.jpg"), linear-gradient(to top right, #fd7503, #ff2f04);
+        }
+      }
+    }
+
+    &--right {
+      text-align: center;
+      margin-top: rem(-75px);
+
+      img {
+        max-width: rem(220px);
       }
 
       h1 {
-        flex: 1 0 75%;
+        color: $orange;
+        font-family: sans-serif;
+        font-size: rem(130px);
+        text-align: center;
+      }
+
+      h2 {
+        font-size: rem(40px);
+        color: $yellow;
+        margin-bottom: rem(40px);
+      }
+      .max,
+      .point {
+        font-family: sans-serif;
+        font-size: rem(36px);
+        color: $yellow;
+        font-weight: bold;
+      }
+      .max__score,
+      .point__score {
+        color: $white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: rem(70px);
+      }
+      .max__score {
+        margin-right: rem(20px);
       }
     }
   }
